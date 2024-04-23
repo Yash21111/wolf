@@ -1,0 +1,26 @@
+pipeline{
+    agent any
+    stages{
+        stage("Code"){
+            steps{
+                echo "code clone"
+            }
+        }
+        stage("code generate"){
+            steps{
+                echo "mapping done"
+            }
+        }
+        stage("code exit"){
+            steps{
+                echo "done"
+        
+            }
+        }
+        stage("code deploy"){
+         steps{
+             echo "close the program"
+         }
+        }
+    }
+}
